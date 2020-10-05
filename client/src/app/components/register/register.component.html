@@ -1,0 +1,43 @@
+<div class="registerContainer">
+
+    <form [formGroup]="form" (ngSubmit)="addUser()">
+        <h1>Register</h1>
+        <div class="fields">
+            <div class="name">
+                <input formControlName="name" type="text" name="name" id="name" placeholder="Name">
+            </div>
+            <div *ngIf="name.touched && name.invalid">
+                <div class="alert" *ngIf="name.errors.required">Name is required</div>
+            </div>
+            <div class="name">
+
+                <input formControlName="email" type="text" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="alert" *ngIf="email.touched && email.invalid">
+                <div *ngIf="email.errors.required">Email is required</div>
+                <div *ngIf="email.errors.email">invalid email adress</div>
+            </div>
+            <div class="name">
+
+                <input formControlName="password" type="password" name="password" id="password" placeholder="Password">
+            </div>
+            <div class="alert" *ngIf="password.touched && password.invalid">
+                <div *ngIf="password.errors.required">Password is required</div>
+                <div *ngIf="password.errors.minlength">password must have 5 characters</div>
+            </div>
+            <div class="name">
+
+                <input formControlName="confirmPassword" type="password" name="password" id="password"
+                    placeholder="Confirm password">
+            </div>
+            <div class="alert" *ngIf="confirmPassword.touched && confirmPassword.invalid">
+                <div *ngIf="confirmPassword.errors.required">Password is required</div>
+                <div *ngIf="confirmPassword.errors.mustMatch">Password must match</div>
+            </div>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+    <div class="register-image">
+        <img src="../../../assets/register.png" alt="">
+    </div>
+</div>

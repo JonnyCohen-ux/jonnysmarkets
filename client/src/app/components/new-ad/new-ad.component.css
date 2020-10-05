@@ -1,0 +1,123 @@
+.newAdContainer {
+  width: 100%;
+  height: 80vh;
+  background-color: #ecf0f3;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: -100;
+}
+.background img {
+  width: 90%;
+}
+form {
+  width: 400px;
+  height: 550px;
+  background-color: #ecf0f3;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+select {
+  background: #ecf0f3;
+  padding: 8px 10px;
+  width: 200px;
+  box-shadow: 8px 8px 20px #cbced1, -8px -8px 20px #ffffff;
+  border-radius: 25px;
+  outline: none;
+}
+.phone-number select {
+  width: 75px;
+}
+label {
+  display: block;
+}
+input {
+  width: 200px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+input:focus {
+  border-bottom: 3px solid #18b9a7;
+}
+.addYourAddLogo {
+  width: 200px;
+  height: 85px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+}
+.addFront {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+  border: 3px solid #18b9a7;
+  cursor: pointer;
+  outline: none;
+  z-index: 5;
+}
+.addBack {
+  position: absolute;
+  left: -2px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #18b9a7;
+  transform: rotate(-6deg);
+  border: 3px solid #000;
+}
+.addYourAddLogo h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 26px;
+  color: #fff;
+}
+button {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 200px;
+  height: 50px;
+  color: #555;
+  background-color: #18b9a7;
+  border-radius: 25px;
+  color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+button:active {
+  transform: scale(0.8);
+}
+
+input[type="file"] {
+  background: none;
+  border: none;
+  display: none;
+}
+.image label {
+  background: #ecf0f3;
+  padding: 8px 10px;
+  width: 200px;
+  box-shadow: 8px 8px 20px #cbced1, -8px -8px 20px #ffffff;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid black;
+}

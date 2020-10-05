@@ -1,0 +1,32 @@
+<div class="loginContainer">
+
+    <form [formGroup]="form" (ngSubmit)="login()">
+        <h1>Login</h1>
+        <p class="alert">{{wrongUser}}</p>
+        <div class="fields">
+
+            <div class="name">
+                <i class="fas fa-user"></i>
+                <input (keyup)="clear()" formControlName="email" type="text" name="email" id="email"
+                    placeholder="Email">
+            </div>
+            <div class="alert" *ngIf="email.touched && email.invalid">
+                <div *ngIf="email.errors.required">Email is required</div>
+                <div *ngIf="email.errors.email">invalid email adress</div>
+            </div>
+            <div class="name">
+                <i class="fas fa-lock"></i>
+                <input (keyup)="clear()" formControlName="password" type="password" name="password" id="password"
+                    placeholder="Password">
+            </div>
+            <div class="alert" *ngIf="password.touched && password.invalid">
+                <div *ngIf="password.errors.required">Password is required</div>
+            </div>
+
+        </div>
+        <button type="submit">Login</button>
+    </form>
+    <div class="register-image">
+        <img src="../../../assets/login.png" alt="">
+    </div>
+</div>

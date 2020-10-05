@@ -1,0 +1,46 @@
+<!-- <div class="ad">
+    <div class="decorative">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="models">
+        <div class="model">Seat</div>
+        <div class="semiModel">Ibiza</div>
+    </div>
+    <div class="image">
+        <img src="https://www.seat.co.il/wp-content/uploads/2019/10/item0.resizedViewPort.scale_.vehicleExteriorModelImage-3.png"
+            alt="">
+    </div>
+    <div class="priceAndPhone">
+        <h3 class="phone"><span> <i class="fas fa-phone-alt"></i> </span> 0502594527 </h3>
+        <h3 class="price"> <span><i class="fas fa-tag"></i></span> {{'500' | currency}} </h3>
+    </div>
+    <div class="isFavorite">
+        <i (click)="adIsFavorite()" [ngClass]="isFavorite?'fas':'far'" class="fa-star"></i>
+    </div>
+
+</div>
+ -->
+
+<div class="card">
+    <div class="cardImage">
+        <img [src]=" demoImage" />
+    </div>
+    <div class="line"></div>
+    <div class="modelAndPrice">
+        <div class="model">Seat ibiza</div>
+        <div class="price">{{'3500' | currency}}</div>
+    </div>
+    <div class="sellerAndPhone">
+        <div class="seller">
+            <h4>Seller: Jonny</h4>
+        </div>
+        <div class="phone">
+            <h4>(+972)502594527</h4>
+        </div>
+    </div>
+    <div class="favorite">
+        <i (click)="adIsFavorite()" [ngClass]="isFavorite?'fas':'far'" class="fa-star"></i>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<nav>
+    <div class="buttonAndLogo">
+        <div routerLink="/" class="logo">
+            <h1>B<span>&</span>S</h1>
+            <p><span>B</span>UY AND <span>S</span>ELL</p>
+        </div>
+        <div *ngIf="isLoggedIn" routerLink="/new-ad" class="newAd">
+            <h2>Add Your Ad</h2>
+        </div>
+        <div *ngIf="!isLoggedIn" class="loginRegiser">
+            <button routerLink="/login">Login</button>
+            <h1>/</h1>
+            <button routerLink="/register">Register</button>
+        </div>
+        <div class="logout">
+            <button (click)="logout()" *ngIf="isLoggedIn">Logout</button>
+        </div>
+    </div>
+</nav>

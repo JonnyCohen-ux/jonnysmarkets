@@ -1,0 +1,8 @@
+.adsContainer {
+  height: 700px;
+  display: flex;
+  justify-content: flex-start;
+}
+app-ad {
+  margin-right: 25px;
+}

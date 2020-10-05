@@ -1,0 +1,22 @@
+<div class="homeContainer">
+    <div class="homeContent">
+        <h1> SELL YOUR VEHICLE <br>IN NO TIME</h1>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div (click)="scroll(target)" class="goToSearch">
+            <h5>Use the search bar down below <i class="fas fa-arrow-down"></i> </h5>
+        </div>
+    </div>
+
+    <div class="homeImage">
+        <img src="../../../assets/home-bg.svg" alt="">
+    </div>
+
+</div>
+<div id="aaa" #target>
+    <app-search-bar></app-search-bar>
+    <app-ads></app-ads>
+</div>
